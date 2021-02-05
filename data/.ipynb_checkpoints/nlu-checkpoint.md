@@ -24,10 +24,9 @@
 - muy amable
 - muy gentil
 - le agradezco
-- muy amable
 - hasta la proxima
 - que este bien
-
+- [Gracias](ubicacion)
 
 ## intent:afirmacion
 - correcto
@@ -35,7 +34,6 @@
 - claro que si
 - seguro
 - si
-- claro que si
 - claro
 - absolutamente
 
@@ -47,7 +45,6 @@
 - [Santa Rosa](ubicacion)
 - [Dosquebradas](ubicacion)
 - [Villa Maria](ubicacion)
-- [Palestina](ubicacion)
 - [Anserma](ubicacion)
 - [Marulanda](ubicacion)
 - [Belen de Umbria](ubicacion)
@@ -61,7 +58,7 @@
 - esta es la cuenta [101112134](numero_cuenta)
 - este es el numero de cuenta
 - este es el numero de cuenta que tengo [101112134](numero_cuenta)
-
+- [107558968](numero_cuenta)[107558968](numero_cuenta)
 
 ## intent:solicitud_datos_cuenta
 - necesito informacion de mi cuenta
@@ -77,9 +74,6 @@
 - a nombre de quien esta el servicio [101177440](numero_cuenta)
 - a nombre de quien esta el servicio de la luz con cuenta [101177440](numero_cuenta)
 - a nombre de quien esta el servicio de la luz con numero de cuenta [101177440](numero_cuenta)
-- a nombre de quien esta el servicio de la luz con cuenta [101177440](numero_cuenta)
-- a nombre de quien esta el servicio de la luz con numero de cuenta [101177440](numero_cuenta)
-
 
 ## intent:falla_servicio_energia
 - me podria decir por que hay falla de energia en [Marulanda](ubicacion)
@@ -98,7 +92,7 @@
 - la luz se va mucho en [Dosquebradas](ubicacion)
 - que servicio de luz tan malo
 - se fue la luz
-- estamos sin luz 
+- estamos sin luz
 - se fue la luz [Victoria](ubicacion)
 - estamos sin luz en [Florencia](ubicacion)
 - estamos sin servicio de energia
@@ -131,7 +125,6 @@
 - por cuanto me llego la luz en [febrero](periodo)
 - por cuanto me llego la luz en [abril](periodo)
 - por cuanto me llego la luz en [mayo](periodo)
-- por cuanto me llego la luz en [junio](periodo)
 - por cuanto me llego la luz en [julio](periodo)
 - por cuanto me llego la luz en [agosto](periodo)
 
@@ -142,7 +135,6 @@
 - hasta cuando tengo plazo de pagar la el servicio de luz
 - hasta cuando puedo pagar la luz?
 - hasta cuando puedo pagar la luz
-- hasta cuando tengo plazo de pagar la el servicio de luz?
 
 ## intent:reclamo_valor_factura
 - digame por que me llego tan cara la luz
@@ -157,7 +149,7 @@
 - la luz me llego muy [cara](costo)
 - por que la luz de la cuenta [10101010](numero_cuenta) me llego tan [cara](costo)
 - por que la luz de la cuenta [10101010](numero_cuenta) me llego tan [costosa](costo)
-- por que me llego tan [cara](costo) la luz de la cuenta [10101010](numero_cuenta) 
+- por que me llego tan [cara](costo) la luz de la cuenta [10101010](numero_cuenta)
 - el servicio de energia me llego muy [caro](costo)
 - la luz esta [carisima](costo)
 - la luz esta muy [alta](costo)
@@ -165,7 +157,7 @@
 - que luz tan [cara](costo)
 - que servico de luz tan [carisimo](costo)
 - que servicio tan [carisimo](costo)
-- que luz tan [cara](costo)
+- por que me llego la luz tan [cara](costo)[cara](costo)?
 
 ## intent:explicacion_financiaciones
 - cuantos [productos](financiacion) tengo con chec
@@ -191,7 +183,6 @@
 - cual es valor de la [financiacion](financiacion) que tengo con chec
 - por que me llego tan cara la [finaciacion](financiacion)
 - por que me llego tan caro el [credito](financiacion)
-
 
 ## intent:pagos_realizados
 - digame los ultimos [pagos](pago) de mi factura
@@ -222,19 +213,6 @@
 - como hago para [hacer](accion) un [credito](financiacion) en [La Dorada](ubicacion)
 - como puedo [adquirir](accion) un [credito](financiacion)
 
-## regex:numero_cuenta
-- [0-9]{9}
-
-## synonym:costo
-- precio
-- valor
-- costo
-- costoso
-- caro
-- carisimo
-- costoso
-- costosisimo
-
 ## synonym:articulo
 - nevera
 - lavadora
@@ -245,3 +223,14 @@
 - portatil
 - pc
 - celular
+
+## synonym:costo
+- precio
+- valor
+- costoso
+- caro
+- carisimo
+- costosisimo
+
+## regex:numero_cuenta
+- [0-9]{9}
