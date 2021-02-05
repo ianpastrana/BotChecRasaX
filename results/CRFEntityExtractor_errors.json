@@ -1,0 +1,110 @@
+[
+  {
+    "text": "de quien es la cuenta 101177440",
+    "entities": [
+      {
+        "start": 15,
+        "end": 31,
+        "value": "cuenta 101177440",
+        "entity": "numero_cuenta"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "numero_cuenta",
+        "start": 22,
+        "end": 31,
+        "confidence_entity": 0.9802581352816548,
+        "value": "101177440",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "cual es el valor a pagar este mes?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 34,
+        "value": "este mes?",
+        "entity": "periodo"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "por cuanto me llego la luz el mes pasado",
+    "entities": [
+      {
+        "start": 30,
+        "end": 40,
+        "value": "mes pasado",
+        "entity": "periodo"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "por cuanto me llego la luz luz el mes pasado?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 45,
+        "value": "mes pasado?",
+        "entity": "periodo"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "por que me llego tan cara la factura",
+    "entities": [
+      {
+        "start": 21,
+        "end": 25,
+        "value": "cara",
+        "entity": "costo"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "por que esta tan cara la factura?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 21,
+        "value": "cara",
+        "entity": "costo"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "por que me llego tan cara la luz de la cuenta 10101010",
+    "entities": [
+      {
+        "start": 21,
+        "end": 25,
+        "value": "cara",
+        "entity": "costo"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "value": "10101010",
+        "entity": "numero_cuenta"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "numero_cuenta",
+        "start": 46,
+        "end": 54,
+        "confidence_entity": 0.9888147420625042,
+        "value": "10101010",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

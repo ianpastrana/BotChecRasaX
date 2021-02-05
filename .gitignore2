@@ -1,0 +1,5 @@
+# Ignore Mac system files
+#credentials.yml
+
+# ignore archivo de creacion de claves
+#generacion_claves
