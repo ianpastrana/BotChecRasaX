@@ -86,12 +86,11 @@ actions:
 - action_session_start
 - accion_solicitud_factura
 - accion_aliados_comerciales
+- action_session_start
 
 
 forms:
 - forma_aliados_comerciales
-
-
 
 session_config:
   session_expiration_time: 60  # value in minutes, 0 means infinitely long
