@@ -91,14 +91,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion factura + valor a pagar Sin Saludo
 * explicacion_factura{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -109,7 +107,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -118,7 +115,6 @@
   - utter_saludo
 * explicacion_financiaciones{"numero_cuenta": 101177242, "financiacion": "credito"}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -127,14 +123,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion financiaciones Productos Sin Saludo
 * explicacion_financiaciones{"numero_cuenta": 101177242, "financiacion": "credito"}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -145,7 +139,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -154,7 +147,6 @@
   - utter_saludo
 * pagos_realizados{"numero_cuenta": 101177242, "pago": "cancelado"}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -163,14 +155,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion de pagos Sin Saludo
 * pagos_realizados{"numero_cuenta": 101177242, "pago": "cancelado"}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -181,7 +171,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pqrs
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -190,7 +179,6 @@
   - utter_saludo
 * informacion_pqrs_interpuestos{"numero_cuenta": 101177242, "pqr": "queja"}
   - accion_informacion_pqrs
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -199,14 +187,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pqrs
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion de pqrs Sin Saludo
 * informacion_pqrs_interpuestos{"numero_cuenta": 101177242, "pqr": "queja"}
   - accion_informacion_pqrs
-  - action_restart
 * despedida
   - utter_despedida
 
