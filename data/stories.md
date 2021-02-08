@@ -3,7 +3,6 @@
   - utter_saludo
 * solicitud_datos_cuenta{"numero_cuenta": 101177447}
   - accion_obtener_datos_usuario
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -14,7 +13,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_obtener_datos_usuario
-  - action_restart
 * despedida
   - utter_despedida
 
