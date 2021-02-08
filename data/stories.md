@@ -23,7 +23,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -34,7 +33,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_solicitud_factura
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -43,7 +41,6 @@
   - utter_saludo
 * reclamo_valor_factura{"numero_cuenta": 101177242, "costo": false}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -52,14 +49,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
 ## Reclamos Sin Saludo
 * reclamo_valor_factura{"numero_cuenta": 101177242, "costo": false}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -71,7 +66,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -80,7 +74,6 @@
   - utter_saludo
 * explicacion_factura{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
