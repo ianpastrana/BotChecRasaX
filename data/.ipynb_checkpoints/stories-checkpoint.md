@@ -3,7 +3,6 @@
   - utter_saludo
 * solicitud_datos_cuenta{"numero_cuenta": 101177447}
   - accion_obtener_datos_usuario
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -14,7 +13,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_obtener_datos_usuario
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -25,7 +23,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -36,7 +33,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_solicitud_factura
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -45,7 +41,6 @@
   - utter_saludo
 * reclamo_valor_factura{"numero_cuenta": 101177242, "costo": false}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
@@ -54,17 +49,14 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
 
 ## Reclamos Sin Saludo
 * reclamo_valor_factura{"numero_cuenta": 101177242, "costo": false}
   - accion_alto_costo
-  - action_listen
 * despedida
   - utter_despedida
-
 
 ## informacion factura + valor a pagar + pedir cuenta
 * saludo
@@ -73,7 +65,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -82,7 +73,6 @@
   - utter_saludo
 * explicacion_factura{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -91,14 +81,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion factura + valor a pagar Sin Saludo
 * explicacion_factura{"numero_cuenta": 101177242}
   - accion_valor_a_pagar
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -109,7 +97,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -118,7 +105,6 @@
   - utter_saludo
 * explicacion_financiaciones{"numero_cuenta": 101177242, "financiacion": "credito"}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -127,14 +113,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion financiaciones Productos Sin Saludo
 * explicacion_financiaciones{"numero_cuenta": 101177242, "financiacion": "credito"}
   - accion_financiacion_productos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -145,7 +129,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -154,7 +137,6 @@
   - utter_saludo
 * pagos_realizados{"numero_cuenta": 101177242, "pago": "cancelado"}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -163,14 +145,12 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
 ## informacion de pagos Sin Saludo
 * pagos_realizados{"numero_cuenta": 101177242, "pago": "cancelado"}
   - accion_informacion_pagos
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -181,7 +161,6 @@
   - utter_pedir_cuenta
 * cuenta{"numero_cuenta": 101177242}
   - accion_informacion_pqrs
-  - action_restart
 * despedida
   - utter_despedida
 
@@ -209,7 +188,6 @@
   - action_restart
 * despedida
   - utter_despedida
-
 
 ## informacion de Aliados Comerciales
 * saludo
