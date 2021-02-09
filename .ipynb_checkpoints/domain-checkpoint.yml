@@ -107,7 +107,12 @@ slots:
     influence_conversation: true
 responses:
   utter_saludo:
-  - text: ¡Hola? En que te puedo ayudar?
+  - buttons:
+    - payload: reclamo
+      title: Reclamo
+    - payload: credito
+      title: Credito
+    text: ¡Hola? En que te puedo ayudar?
   - buttons:
     - payload: reclamo
       title: Reclamo
