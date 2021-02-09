@@ -106,9 +106,6 @@ slots:
     auto_fill: true
     influence_conversation: true
 responses:
-  utter_saludo:
-  - text: ¡Hola? En que te puedo ayudar?
-  - text: ¡Hola, Cómo estás hoy!!!! En qué te puedo ayudar?
   utter_esperar:
   - text: Dame un Segundo, por favor
   - text: Esperame un momento
