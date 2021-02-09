@@ -1,20 +1,40 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-- saludo
-- ubicacion
-- cuenta
-- solicitud_datos_cuenta
-- falla_servicio_energia
-- explicacion_factura
-- reclamo_valor_factura
-- explicacion_financiaciones
-- despedida
-- afirmaciones
-- fecha_pago_factura
-- pagos_realizados
-- informacion_pqrs_interpuestos
-- solicitud_factura
-- informacion_aliados_comerciales
-
+- saludo:
+    use_entities: true
+- ubicacion:
+    use_entities: true
+- cuenta:
+    use_entities: true
+- solicitud_datos_cuenta:
+    use_entities: true
+- falla_servicio_energia:
+    use_entities: true
+- explicacion_factura:
+    use_entities: true
+- reclamo_valor_factura:
+    use_entities: true
+- explicacion_financiaciones:
+    use_entities: true
+- despedida:
+    use_entities: true
+- afirmaciones:
+    use_entities: true
+- fecha_pago_factura:
+    use_entities: true
+- pagos_realizados:
+    use_entities: true
+- informacion_pqrs_interpuestos:
+    use_entities: true
+- solicitud_factura:
+    use_entities: true
+- informacion_aliados_comerciales:
+    use_entities: true
 entities:
 - ubicacion
 - numero_cuenta
@@ -27,47 +47,68 @@ entities:
 - copia
 - accion
 - articulo
-
 slots:
   ubicacion:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   accion:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   copia:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   pqr:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   pago:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   costo:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   fecha_factura:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   financiacion:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   hora:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   numero_cuenta:
-    type: float
+    type: rasa.shared.core.slots.FloatSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
     max_value: 1.0
     min_value: 0.0
   periodo:
-    type: text
-
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
 responses:
   utter_saludo:
   - text: ¡Hola? En que te puedo ayudar?
-    buttons:
-    - title: "Reclamo"
-      payload: "/reclamo"
-    - title: "Copia de Factura"
-      payload: "/copia"
   - text: ¡Hola, Cómo estás hoy!!!! En qué te puedo ayudar?
-      buttons:
-    - title: "Reclamo"
-      payload: "/reclamo"
-    - title: "Copia de Factura"
-      payload: "/copia"
   utter_esperar:
   - text: Dame un Segundo, por favor
   - text: Esperame un momento
@@ -82,7 +123,6 @@ responses:
   - text: Con mucho gusto
   utter_template:
   - text: Te puedo ayudar en algo más?
-
 actions:
 - utter_saludo
 - utter_pedir_cuenta
@@ -97,11 +137,7 @@ actions:
 - accion_solicitud_factura
 - accion_aliados_comerciales
 - action_session_start
-
-
-forms:
 - forma_aliados_comerciales
-
-session_config:
-  session_expiration_time: 60  # value in minutes, 0 means infinitely long
-  carry_over_slots_to_new_session: true  # set to false to forget slots between sessions
+forms:
+  forma_aliados_comerciales: {}
+e2e_actions: []
