@@ -57,7 +57,17 @@ slots:
 responses:
   utter_saludo:
   - text: ¡Hola? En que te puedo ayudar?
+    buttons:
+    - title: "Reclamo"
+      payload: "/reclamo"
+    - title: "Copia de Factura"
+      payload: "/copia"
   - text: ¡Hola, Cómo estás hoy!!!! En qué te puedo ayudar?
+      buttons:
+    - title: "Reclamo"
+      payload: "/reclamo"
+    - title: "Copia de Factura"
+      payload: "/copia"
   utter_esperar:
   - text: Dame un Segundo, por favor
   - text: Esperame un momento
