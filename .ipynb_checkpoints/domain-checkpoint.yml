@@ -108,7 +108,12 @@ slots:
 responses:
   utter_saludo:
   - text: ¡Hola? En que te puedo ayudar?
-  - text: ¡Hola, Cómo estás hoy!!!! En qué te puedo ayudar?
+  - buttons:
+    - payload: reclamo
+      title: Reclamo
+    - payload: credito
+      title: Creditos
+    text: ¡Hola, Cómo estás hoy!!!! En qué te puedo ayudar?
   utter_esperar:
   - text: Dame un Segundo, por favor
   - text: Esperame un momento
